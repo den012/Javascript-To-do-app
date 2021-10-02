@@ -1,0 +1,107 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+            315deg, #380036 34%, #0cbaba 74%
+    );
+}
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    padding: 30px 40px;
+}
+#newtask{
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+#newtask input {
+    width: 80%;
+    height: 45px;
+    border: 3px solid #ccc;
+    font-size: 20px;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#newtask input:hover {
+    border-color: lightskyblue;
+}
+
+#newtask input:focus {
+    outline:none;
+}
+
+#newtask button {
+    transition: all 1.5s ease;
+    border-radius: 6px;
+    background-color: dodgerblue;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    width: 15%;
+    margin-left: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#newtask button:hover {
+    background-color: indianred;
+    color: #fff;
+}
+#tasks{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+}
+.task{
+    background-color: #ffffff;
+    height: 50px;
+    padding:5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d1d2d4;
+}
+.task span{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.task button{
+    transition: all 1.5s ease;
+    border-radius: 6px;
+    background-color: red;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    width: 15%;
+    margin-left: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.task button:hover {
+    background-color: dodgerblue;
+    color: #fff;
+}
+.completed{
+    text-decoration: line-through;
+}
